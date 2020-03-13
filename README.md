@@ -3,6 +3,7 @@ In December 2019 the centre acquired 2 new machines. The machines were obtained 
 ## The machines
 
 Both machines are running [Debian 10](https://www.debian.org).
+
 `woolf` (named after [Virginia Woolf](https://en.wikipedia.org/wiki/Virginia_Woolf)) is an Intel machine:
 - Intel [Xeon W2295](https://ark.intel.com/content/www/us/en/ark/products/198011/intel-xeon-w-2295-processor-24-75m-cache-3-00-ghz.html) CPU
 - 128 GB of DDR4 2666 MHz RAM
