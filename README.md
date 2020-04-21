@@ -25,7 +25,7 @@ The [AMD optimizing compiler (AOCC)](https://developer.amd.com/amd-aocc/) is an 
  $ source /opt/AMD/aocc-compiler-2.1.0/setenv_AOCC.sh
  ```
 The compiler will be available as `clang` for C, `clang++` for C++, and `flang` for Fortran.
- 
+
 ### Intel MKL
 The latest version (2020.0-088) of the [Intel Math Kernel Libraries](https://software.intel.com/en-us/mkl) is globally installed. However, the libraries are not _globally_ on `PATH` or `LD_LIBRARY_PATH`. To do so, run:
 ```
@@ -49,12 +49,22 @@ source /opt/intel/bin/compilervars.sh intel64
 
 ## Docker and Singularity
 You can build and run images and containers with both [Docker](https://docs.docker.com/install/) and [Singularity](https://sylabs.io/). All users are part of the `docker` group and thus can use Docker without superuser privileges.
- 
+
 ## Package managers
 ### `pip`+`virtualenv`, Pipenv, and poetry
 ### Nix
 ### Conda
 ### Spack
+
+## Jupyter notebook
+1. `ssh` into your favorite author.
+2. Install jupyter notebook using your favorite package manager.
+3. On Sandel/woolf run `jupyter notebook --no-browser --port xxxx`.
+4. Locally run `ssh -NL xxxx:localhost:xxxx <username>@<favorite author>.chem.uit.no`.
+5. Open your web-browser locally and copy paste the link generated when you did step 3.
+
+xxxx is some 4 digit number eg., 1234. Pick your favorite, if one does not work move on
+to your second favorite 4 digit number.
 
 ## Getting an account
 In order to obtain an account, we ask you to fill this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSc6PJvJRLYuoJs_PdA0GNmKgFBLkUyVdez2LoeJtVtd5wNhog/viewform?usp=sf_link) with your contact information and desired username. You will be contacted with further instructions.
