@@ -26,24 +26,21 @@ The [AMD optimizing compiler (AOCC)](https://developer.amd.com/amd-aocc/) is an 
  ```
 The compiler will be available as `clang` for C, `clang++` for C++, and `flang` for Fortran.
 
-### Intel MKL
-The latest version (2020.0-088) of the [Intel Math Kernel Libraries](https://software.intel.com/en-us/mkl) is globally installed. However, the libraries are not _globally_ on `PATH` or `LD_LIBRARY_PATH`. To do so, run:
+### Intel oneAPI products
+[Intel oneAPI](https://software.intel.com/en-us/oneapi) makes available many developers' tools from Intel. The installation on both `woolf` and `sandel` includes:
+- Advisor
+- C, C++, and Fortran compilers
+- MKL
+- MPI
+- TBB
+- VTune
+
+None of these are _globally_ on `PATH` or `LD_LIBRARY_PATH`. To do so, run:
 ```
-source /opt/intel/compilers_and_libraries_2020/linux/mkl/bin/mklvars.sh intel64
+source /opt/intel/inteloneapi/setvars.sh
 ```
 
-### Intel MPI
-The latest version (2019.6-088) of the [Intel MPI](https://software.intel.com/en-us/mpi-library) is globally installed. Note that the installed version provides wrappers for the GCC family of compilers. The compiler wrappers are not _globally_ on `PATH`. To do so, run:
-```
-source /opt/intel/compilers_and_libraries_2020/linux/mpi/intel64/bin/mpivars.sh intel64
-```
-
-If you plan to use **both** Intel MKL and Intel MPI it is enough to just run the following:
-```
-source /opt/intel/bin/compilervars.sh intel64
-```
-
-**NOTE** `sandel` is an AMD machine and the Intel products might not offere full support for the CPU.
+**NOTE** `sandel` is an AMD machine and the Intel products might not offer full support for the CPU.
 
 ## GPU programming
 
