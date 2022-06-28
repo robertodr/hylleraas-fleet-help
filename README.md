@@ -37,7 +37,7 @@ The compiler will be available as `clang` for C, `clang++` for C++, and `flang` 
 
 None of these are _globally_ on `PATH` or `LD_LIBRARY_PATH`. To do so, run:
 ```
-source /opt/intel/inteloneapi/setvars.sh
+source /opt/intel/oneapi/setvars.sh
 ```
 
 **NOTE** `sandel` is an AMD machine and the Intel products might not offer full support for the CPU.
